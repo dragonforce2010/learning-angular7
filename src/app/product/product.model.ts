@@ -7,6 +7,7 @@ export class Product {
       public categories: Array<string>,
       public desc: string,
       public imgUrl: string,
+      public courseUrl: string
     ) {
   
     }
