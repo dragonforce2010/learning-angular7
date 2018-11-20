@@ -1,0 +1,20 @@
+.productItem {
+  margin-top: 20px;
+}
+
+.productTitle {
+    height: 50px;
+}
+
+.productDesc {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+   /* autoprefixer: off */
+   -webkit-box-orient: vertical;
+   /* autoprefixer: on */
+}
+
+.rating {
+    margin-top: 10px
+}
