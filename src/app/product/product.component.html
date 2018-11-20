@@ -1,3 +1,15 @@
-<p>
-  product works!
-</p>
+<div class="container row">
+  <div *ngFor="let product of products" class="col-md-4 col-sm-4 col-lg-4">
+    <div class="thumbnail">
+      <img class="rounded img-thumbnail" src="{{product.imgUrl}}" alt="">
+      <div class="caption">
+        <h4 class="pull-left"><a href="">{{product.title}}</a></h4>
+        <h4 class="pull-right">￥{{product.price}} 元</h4>
+        <p>{{product.desc}}</p>
+      </div>
+      <div>
+        <app-rating></app-rating>
+      </div>
+    </div>
+  </div>
+</div>
