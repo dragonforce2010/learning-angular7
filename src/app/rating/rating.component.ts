@@ -14,8 +14,8 @@ export class RatingComponent implements OnInit {
 
   ngOnInit() {
     this.starEmptyness = []
-    for (let i = 0; i <=5; i++) {
-      this.starEmptyness.push(i > this.rating)
+    for (let i = 1; i <=5; i++) {
+      this.starEmptyness.push(i * 2 > this.rating)
     }
   }
 

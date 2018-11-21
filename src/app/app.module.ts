@@ -9,6 +9,13 @@ import { SearchComponent } from './search/search.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { ProductComponent } from './product/product.component';
 import { RatingComponent } from './rating/rating.component';
+import { HomeComponent } from './home/home.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
+import { ContactusComponent } from './contactus/contactus.component';
+import { SitemapComponent } from './sitemap/sitemap.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { Page404Component } from './page404/page404.component';
+import { ProductListComponent } from './product-list/product-list.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +25,14 @@ import { RatingComponent } from './rating/rating.component';
     SearchComponent,
     CarouselComponent,
     ProductComponent,
-    RatingComponent
+    RatingComponent,
+    HomeComponent,
+    AboutusComponent,
+    ContactusComponent,
+    SitemapComponent,
+    ProductDetailComponent,
+    Page404Component,
+    ProductListComponent
   ],
   imports: [
     BrowserModule,

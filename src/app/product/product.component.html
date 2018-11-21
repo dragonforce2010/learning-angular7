@@ -3,7 +3,7 @@
     <div class="thumbnail">
       <img class="rounded img-thumbnail" src="{{product.imgUrl}}" alt="">
       <div class="caption">
-        <h6 class="productTitle pull-left"iv><a href="{{product.courseUrl}}" target="_blank">{{product.title}}</a></h6>
+        <h6 class="productTitle pull-left"><a [routerLink]="['/home/productdetail']" [queryParams]="{productTitle: product.title, imgUrl: product.imgUrl}" target="_blank">{{product.title}}</a></h6>
         <h6 class="pull-right">￥{{product.price}} 元</h6>
         <div class="productDesc">{{product.desc}}</div>
       </div>
