@@ -18,6 +18,7 @@ import { Page404Component } from './components/page404/page404.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { ProductService } from './services/product.service';
 import { CommentService } from './services/comment.service';
+import { WeatherPipe } from './pipes/weather.pipe';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { CommentService } from './services/comment.service';
     SitemapComponent,
     ProductDetailComponent,
     Page404Component,
-    ProductListComponent
+    ProductListComponent,
+    WeatherPipe
   ],
   imports: [
     BrowserModule,

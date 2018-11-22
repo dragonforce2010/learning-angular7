@@ -21,7 +21,8 @@
     <div class="col-md-12">
       <app-rating [rating]="comment.rating"></app-rating>
       <span>{{comment.username}}</span>
-      <span class="float-md-right float-lg-right float-sm-right">{{comment.timestamp}}</span>
+      <span class="float-md-right float-lg-right float-sm-right">{{'' | weather}}</span>
+      <span class="float-md-right float-lg-right float-sm-right">{{comment.timestamp | date: 'yyyy-MM-dd HH:mm:ss'}}</span>
       <p></p>
       <p>{{comment.content}}</p>
       <br>
