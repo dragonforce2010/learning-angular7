@@ -1,0 +1,27 @@
+<div class="container">
+  <h1>Welcome to the current product details page</h1>
+
+  <div class="container row">
+    <div class="productItem col-md-8 col-lg-8 col-sm-8">
+      <div class="thumbnail">
+        <img class="rounded img-thumbnail" src="{{hotProduct.imgUrl}}" alt="">
+        <div class="caption">
+          <h6 class="productTitle pull-left"><a  target="_blank">{{hotProduct.title}}</a></h6>
+          <h6 class="pull-right">￥{{hotProduct.price}} 元</h6>
+          <div class="productDesc">{{hotProduct.desc}}</div>
+        </div>
+        <div class="rating"> 
+          <app-rating [rating]="hotProduct.rating"></app-rating>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+  
+  <div class="container">
+    <img src="{{imgUrl}}" alt="">
+    <h4>{{productTitle}}</h4>
+  </div>
+
+</div>
