@@ -2,6 +2,10 @@
   margin-top: 20px;
 }
 
+.thumbnail {
+    width: 240px;
+}
+
 .productTitle {
     height: 50px;
 }

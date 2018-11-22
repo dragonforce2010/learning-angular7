@@ -20,6 +20,7 @@ import { ProductService } from './services/product.service';
 import { CommentService } from './services/comment.service';
 import { WeatherPipe } from './pipes/weather.pipe';
 import { ProductSearchBarComponent } from './components/product-search-bar/product-search-bar.component';
+import { PricingComponent } from './components/pricing/pricing.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { ProductSearchBarComponent } from './components/product-search-bar/produ
     Page404Component,
     ProductListComponent,
     WeatherPipe,
-    ProductSearchBarComponent
+    ProductSearchBarComponent,
+    PricingComponent
   ],
   imports: [
     BrowserModule,

@@ -9,6 +9,7 @@ import { Page404Component } from './components/page404/page404.component';
 import { LoginGuard } from './guards/login.guard';
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { ProductDetailComponent } from './components/product-detail/product-detail.component';
+import { PricingComponent } from './components/pricing/pricing.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'product', component: ProductComponent},
   { path: 'aboutus', component: AboutusComponent},
   { path: 'contactus', component: ContactusComponent},
+  { path: 'pricing', component: PricingComponent}, 
   { path: 'sitemap', component: SitemapComponent, canActivate: [LoginGuard]},
   { path: '**', component: Page404Component}
 ];
