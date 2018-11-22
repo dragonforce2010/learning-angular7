@@ -17,6 +17,7 @@ import { ProductDetailComponent } from './components/product-detail/product-deta
 import { Page404Component } from './components/page404/page404.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { ProductService } from './services/product.service';
+import { CommentService } from './services/comment.service';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,7 @@ import { ProductService } from './services/product.service';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [ProductService],
+  providers: [ProductService, CommentService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

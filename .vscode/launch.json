@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "http://localhost:4200/home/productdetail",
+            "url": "http://localhost:4200/home/productdetail?productId=1",
             "sourceMaps": true,
             "trace": true,
             "webRoot": "${workspaceFolder}",

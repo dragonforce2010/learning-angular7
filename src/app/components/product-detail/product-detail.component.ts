@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Product } from '../../models/product.model';
 import { ProductService } from 'src/app/services/product.service';
+import { Comment } from 'src/app/models/comment.model';
+import { CommentService } from 'src/app/services/comment.service';
 
 @Component({
   selector: 'app-product-detail',
@@ -9,19 +11,18 @@ import { ProductService } from 'src/app/services/product.service';
   styleUrls: ['./product-detail.component.css']
 })
 export class ProductDetailComponent implements OnInit {
-  private productTitle: string
-  private imgUrl: string
-  private hotProduct: Product
-
+  private product: Product
+  private comments: Array<Comment>
   constructor(
     private routeInfo: ActivatedRoute,
-    private productService: ProductService
+    private productService: ProductService,
+    private commentService: CommentService,
   ) { }
 
   ngOnInit() {
-    this.productTitle = this.routeInfo.snapshot.queryParams['productTitle']
-    this.imgUrl = this.routeInfo.snapshot.queryParams['imgUrl']
-    this.hotProduct = this.productService.getHotProduct()
+    let productId = this.routeInfo.snapshot.queryParams['productId']
+    this.product = this.productService.getProductById(productId)
+    this.comments = this.commentService.getCommentsByProductId(productId)
   }
 
 }
