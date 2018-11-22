@@ -9,11 +9,11 @@
           </div>
           <!--end of col-->
           <div class="col">
-            <input class="form-control form-control-lg form-control-borderless" type="search" placeholder="Search topics or keywords">
+            <input [(ngModel)]="filterKeywords" name="test" class="form-control form-control-lg form-control-borderless" type="search" placeholder="Search topics or keywords">
           </div>
           <!--end of col-->
           <div class="col-auto">
-            <button class="btn btn-lg btn-success" type="submit">Search</button>
+            <button class="btn btn-lg btn-success" type="submit" (click)="filter($event)">Search</button>
           </div>
           <!--end of col-->
         </div>

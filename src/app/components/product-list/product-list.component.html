@@ -1,5 +1,5 @@
 <div class="container">
   <app-carousel></app-carousel>
-  <app-product-search-bar></app-product-search-bar>
-  <app-product></app-product>
+  <app-product-search-bar (filteredProducts)="onProductsChange($event)"></app-product-search-bar>
+  <app-product [products]="products"></app-product>
 </div>
