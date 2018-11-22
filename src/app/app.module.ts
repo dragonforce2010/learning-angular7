@@ -19,6 +19,7 @@ import { ProductListComponent } from './components/product-list/product-list.com
 import { ProductService } from './services/product.service';
 import { CommentService } from './services/comment.service';
 import { WeatherPipe } from './pipes/weather.pipe';
+import { ProductSearchBarComponent } from './components/product-search-bar/product-search-bar.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { WeatherPipe } from './pipes/weather.pipe';
     ProductDetailComponent,
     Page404Component,
     ProductListComponent,
-    WeatherPipe
+    WeatherPipe,
+    ProductSearchBarComponent
   ],
   imports: [
     BrowserModule,
