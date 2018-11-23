@@ -12,5 +12,11 @@
         <li class="nav-item"><a class="nav-link" [routerLink]="['/contactus']">联系我们</a></li>
         <li class="nav-item"><a class="nav-link" [routerLink]="['/contactus']">网站地图</a></li>
       </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item "><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">登录/注册</button></li>
+      </ul>
     </div>
 </nav>
+
+<!-- 登录模态对话框 -->
+<app-login [hidden]="false"></app-login>
